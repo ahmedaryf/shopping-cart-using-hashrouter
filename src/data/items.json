@@ -28,6 +28,24 @@
         "productName": "iPad Pro",
         "price": 1150,
         "imageUrl": "/images/iPad.jpg" 
+    },
+    {
+        "id": 6,
+        "productName": "iPod",
+        "price": 350,
+        "imageUrl": "/images/iPod.jpg" 
+    },
+    {
+        "id": 7,
+        "productName": "Mac Mini",
+        "price": 1350,
+        "imageUrl": "/images/macmini.jpg" 
+    },
+    {
+        "id": 8,
+        "productName": "Airpod",
+        "price": 450,
+        "imageUrl": "/images/airpod.jpg" 
     }
 ]
 

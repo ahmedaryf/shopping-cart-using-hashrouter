@@ -16,7 +16,7 @@ export function StoreItem({id, productName, price, imageUrl}) {
 
   return (
     <div>
-        <Card className='d-flex align-items-center h-100' data-aos="fade-up">
+        <Card className='d-flex align-items-center h-100' data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
             <Card.Img variant='top' src={imageUrl} height="200px" style={{width:"250px", objectFit: "cover"}}/>
             <Card.Body className='d-flex flex-column'>
               <Card.Title className='d-flex justify-content-around align-items-baseline mb-4'>
