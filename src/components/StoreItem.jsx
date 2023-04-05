@@ -1,15 +1,22 @@
-
+import { useEffect } from 'react'
 import { Button, Card} from 'react-bootstrap'
 import { formatCurreny } from '../utilities/formatCurrency'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export function StoreItem({id, productName, price, imageUrl}) {
   const {getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart} = useShoppingCart();
   const quantity = getItemQuantity(id);
+
+  useEffect(()=> {
+    AOS.init();
+  },[])
+
   return (
     <div>
-        <Card className='d-flex align-items-center h-100'>
+        <Card className='d-flex align-items-center h-100' data-aos="fade-up">
             <Card.Img variant='top' src={imageUrl} height="200px" style={{width:"250px", objectFit: "cover"}}/>
             <Card.Body className='d-flex flex-column'>
               <Card.Title className='d-flex justify-content-around align-items-baseline mb-4'>
